@@ -1,0 +1,20 @@
+Wildfly doku:
+https://hub.docker.com/r/jboss/wildfly/
+
+Command doku:
+#!/bin/bash
+docker run -p 8080:8080 -v $PWD/deployments:/opt/jboss/wildfly/standalone/deployments/ jboss/wildfly
+
+"-p 7070:8080" map host port 7070 to guest port 8080 (now you could access the wildfly for example over localhost:7070)
+
+"-v $PWD/deployments:/opt/jboss/wildfly/standalone/deployments/" map the host directory at $PWD/deployments to the guest directory /opt/jboss/wildfly/standalone/deployements/"
+    there has to be a slash at the end (see wildlfy doku)
+    $PWD is the current working directory (run_wildfly.sh has to be executed in the directory it is in; $PWD happens in the shell and has nothing to do with docker) 
+    so on my machine docker will see:
+        -v /home/robin/Desktop/Windows Desktop/Schule/NVS_GIT_STUETZ/docker_mazanek/wildfly/deployments:/opt/jboss/wildfly/standalone/deployments/
+
+"jboss/wildfly" wildfly image name
+
+
+
+access example with URL: http://localhost:8080/restprimer/rs/time

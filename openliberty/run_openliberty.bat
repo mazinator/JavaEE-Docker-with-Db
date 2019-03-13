@@ -1,0 +1,1 @@
+docker run -p 8082:9080 -p 9443:9443 -v %cd%/deployments:/opt/ol/wlp/usr/servers/defaultServer/dropins/ openliberty/open-liberty:webProfile8

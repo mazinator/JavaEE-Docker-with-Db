@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+    wildfly:
+        build: wildfly
+        ports: 
+          - 8080:8080
+          - 9990:9990
+        volumes:
+          - ./deployments:/opt/jboss/wildfly/standalone/deployments/
+        depends_on:
+          - derby
+    derby:
+        build: derby
+        ports:
+          - 1527:1527
+        volumes:
+          - ./derby/derby_database:/home
