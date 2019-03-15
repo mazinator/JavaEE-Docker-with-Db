@@ -26,6 +26,14 @@ result on ports:
     - openliberty:  https://hub.docker.com/r/openliberty/open-liberty/
     - tomee:        https://hub.docker.com/_/tomee/
 
+	
+## Comparison:
+Tomcat: leichtgewichtig, flexibel, stabile Plattform, limitiert in Funktionalitäten, (simple Anwendung)
+Wildfly: liefert vollständigen JEE-Stack, flexibel, unterstützt Webservices, schwergewichtig (komplexe Anwendung)
+OpenLiberty: Zeit des Deployments kann selbst bestimmt werden ermöglicht Trennung von Development- und Deploymentordner
+Payara: ersetzt glassfish, benutzerdefinierte Konsole mit sehr gutem Report und Administrationsmöglichkeiten
+	
+	
 ## Command Doku:
 docker run -p 8082:9080 -p 9443:9443 -v %cd%/deployments:/opt/ol/wlp/usr/servers/defaultServer/dropins/ openliberty/open-liberty:webProfile8
 
