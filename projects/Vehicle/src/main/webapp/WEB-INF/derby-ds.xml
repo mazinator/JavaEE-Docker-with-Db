@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- See http://www.jboss.org/community/wiki/Multiple1PC for information about datasource -->
+<datasources xmlns="http://www.jboss.org/ironjacamar/schema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://www.jboss.org/ironjacamar/schema/datasources_1_0.xsd">
+    <datasource jndi-name="java:jboss/datasources/derbyDB" pool-name="derbyDB">
+        <connection-url>jdbc:derby://derby:1527/db;create=true</connection-url>
+        <driver>vehicle.war_org.apache.derby.jdbc.ClientDriver_10_14</driver>
+        <pool>
+            <min-pool-size>5</min-pool-size>
+            <max-pool-size>20</max-pool-size>
+        </pool>
+        <security>
+            <user-name>APP</user-name>
+            <password>APP</password>
+        </security>
+    </datasource>
+</datasources>
