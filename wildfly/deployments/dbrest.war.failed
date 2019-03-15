@@ -1,0 +1,4 @@
+"{
+    \"WFLYCTL0412: Required services that are not installed:\" => [\"jboss.jdbc-driver.vehicle_war_org_apache_derby_jdbc_ClientDriver_10_14\"],
+    \"WFLYCTL0180: Services with missing/unavailable dependencies\" => [\"jboss.data-source.\\\"jboss.naming.context.java.jboss.datasources.DbDS\\\" is missing [jboss.jdbc-driver.vehicle_war_org_apache_derby_jdbc_ClientDriver_10_14]\"]
+}"
