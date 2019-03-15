@@ -29,7 +29,7 @@ result on ports:
 ## Command Doku:
 docker run -p 8082:9080 -p 9443:9443 -v %cd%/deployments:/opt/ol/wlp/usr/servers/defaultServer/dropins/ openliberty/open-liberty:webProfile8
 
--p 8082:9080                                                        -> map host port to guest port
--v %cd%/deployments:/opt/ol/wlp/usr/servers/defaultServer/dropins/  -> map the deployments directory to host directory
-																	   %cd% represents the current directory
-openliberty/open-liberty:webProfile8                                -> name of image
+-p 8082:9080                                                       -> map host ports\
+-p 9443:9443                                                       -> map admin ports\
+-v %cd%/deployments:/opt/ol/wlp/usr/servers/defaultServer/dropins/ -> map the deployments directory to host directory (%cd% represents the current directory)\
+openliberty/open-liberty:webProfile8                               -> name of image\
