@@ -4,27 +4,27 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>at.htl.nvs.simplerest</groupId>
-    <artifactId>simplerest</artifactId>
+    <groupId>at.htl.restprimer</groupId>
+    <artifactId>Restprimer</artifactId>
     <version>1.0-SNAPSHOT</version>
+
     <packaging>war</packaging>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <failOnMissingWebXml>false</failOnMissingWebXml>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>javax</groupId>
-            <artifactId>javaee-web-api</artifactId>
+            <artifactId>javaee-api</artifactId>
             <version>7.0</version>
-            <scope>compile</scope>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
     <build>
-        <finalName>simplerest</finalName>
+        <finalName>restprimer</finalName>
     </build>
 </project>

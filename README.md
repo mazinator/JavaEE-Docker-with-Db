@@ -32,3 +32,4 @@ docker run -p 8082:9080 -p 9443:9443 -v %cd%/deployments:/opt/ol/wlp/usr/servers
 -p 8082:9080                                                        -> map host port to guest port
 -v %cd%/deployments:/opt/ol/wlp/usr/servers/defaultServer/dropins/  -> map the deployments directory to host directory
 																	   %cd% represents the current directory
+openliberty/open-liberty:webProfile8                                -> name of image

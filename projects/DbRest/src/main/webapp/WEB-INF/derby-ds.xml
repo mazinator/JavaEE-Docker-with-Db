@@ -2,7 +2,7 @@
 <datasources xmlns="http://www.jboss.org/ironjacamar/schema"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:noNamespaceSchemaLocation="http://www.jboss.org/ironjacamar/schema/datasources_1_0.xsd">
-    <datasource jndi-name="java:jboss/datasources/derbyDB" pool-name="derbyDB">
+    <datasource jndi-name="java:jboss/datasources/DbDS" pool-name="derbyDB">
         <connection-url>jdbc:derby://derby:1527/db;create=true</connection-url>
         <driver>vehicle.war_org.apache.derby.jdbc.ClientDriver_10_14</driver>
         <pool>

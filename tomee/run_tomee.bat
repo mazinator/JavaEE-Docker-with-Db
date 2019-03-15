@@ -1,1 +1,1 @@
-docker run -p 8083:8080 -v %cd%/deployments:/usr/local/tomee/webapps/ tomee:8-jre-1.7.5-jaxrs
+docker run -p 8083:8080 -v %cd%/deployments/verysimplerest.war:/usr/local/tomee/webapps/webapp.war tomee:8-jre-1.7.5-jaxrs
